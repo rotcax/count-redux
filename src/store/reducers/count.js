@@ -1,4 +1,4 @@
-import { INCREMENT_COUNT, DECREMENT_COUNT, INCREASE_COUNTER_ASYNC, DECREASE_COUNTER_ASYNC } from '../actions-type';
+import { INCREMENT_COUNT, DECREMENT_COUNT } from '../actions-type';
 
 const initialState = {
   number: 0
