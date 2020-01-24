@@ -6,14 +6,25 @@ const initialState = {
 
 const countReducer = (state = initialState, action) => {
   switch(action.type) {
-    case INCREMENT_COUNT:
+    // Normal Redux | Redux Saga
+  //   case INCREMENT_COUNT:
+  //   return {
+  //     number: action.payload
+  //   }
+
+  //   case DECREMENT_COUNT:
+  //   return {
+  //     number: action.payload
+  //  }
+
+    case 'INCREASE_COUNTER_ASYNC':
     return {
-      number: action.payload
+      number: state.number + action.payload
     }
 
-    case DECREMENT_COUNT:
+    case 'DECREASE_COUNTER_ASYNC':
     return {
-      number: action.payload
+      number: state.number - action.payload
     }
 
     default:
