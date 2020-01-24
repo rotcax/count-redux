@@ -1,4 +1,4 @@
-import { INCREMENT_COUNT, DECREMENT_COUNT } from '../actions-type';
+import { INCREMENT_COUNT, DECREMENT_COUNT, INCREASE_COUNTER_ASYNC, DECREASE_COUNTER_ASYNC } from '../actions-type';
 
 const initialState = {
   number: 0
@@ -17,12 +17,12 @@ const countReducer = (state = initialState, action) => {
   //     number: action.payload
   //  }
 
-    case 'INCREASE_COUNTER_ASYNC':
+    case INCREASE_COUNTER_ASYNC:
     return {
       number: state.number + action.payload
     }
 
-    case 'DECREASE_COUNTER_ASYNC':
+    case DECREASE_COUNTER_ASYNC:
     return {
       number: state.number - action.payload
     }
