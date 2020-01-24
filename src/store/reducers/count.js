@@ -1,4 +1,4 @@
-import { INCREMENT_COUNT, DECREMENT_COUNT, INCREASE_COUNTER_ASYNC, DECREASE_COUNTER_ASYNC } from '../actions-type';
+import { INCREASE_COUNTER_ASYNC, DECREASE_COUNTER_ASYNC } from '../actions-type';
 
 const initialState = {
   number: 0
@@ -6,17 +6,6 @@ const initialState = {
 
 const countReducer = (state = initialState, action) => {
   switch(action.type) {
-    // Normal Redux | Redux Saga
-  //   case INCREMENT_COUNT:
-  //   return {
-  //     number: action.payload
-  //   }
-
-  //   case DECREMENT_COUNT:
-  //   return {
-  //     number: action.payload
-  //  }
-
     case INCREASE_COUNTER_ASYNC:
     return {
       number: state.number + action.payload
