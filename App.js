@@ -3,11 +3,7 @@ import { Provider } from 'react-redux';
 import { Main } from './src/components';
 import configureStore from './src/store';
 
-// Normal Redux | Redux Thunk
-// const store = configureStore();
-
-// Redux Saga
-const store = configureStore;
+const store = configureStore();
 
 class App extends Component {
   render() {
